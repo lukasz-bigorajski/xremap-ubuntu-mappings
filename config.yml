@@ -1,9 +1,9 @@
 # Xremap configuration for macOS-like key mappings on Ubuntu/Linux
 # Based on Kinto project mappings
 
-# Global modifier remapping - makes Cmd key work like on macOS
+# Global modifier remapping - makes Super key work like on macOS
 modmap:
-  - name: Global modmap - Make Cmd key work like macOS
+  - name: Global modmap - Make Super key work like macOS
     application:
       not: 
         - alacritty
@@ -12,12 +12,12 @@ modmap:
       # Uncomment one of the following sections based on your keyboard layout preference:
       
       # Default Mac/Win layout
-      # Alt_L: Ctrl_R        # Make Alt work like Cmd
+      # Alt_L: Ctrl_R        # Make Alt work like Super
       # Super_L: Alt_L       # Make Super work like Alt  
       # Ctrl_L: Super_L      # Make Ctrl work like Super
       
       # Mac Only layout (recommended for macOS users)
-      # Super_L: Ctrl_R      # Make Super (Cmd) work like Ctrl
+      # Super_L: Ctrl_R      # Make Super work like Ctrl
       # Ctrl_L: Super_L      # Make Ctrl work like Super
 
 keymap:
@@ -27,50 +27,50 @@ keymap:
       only: [/jetbrains-.*/]
     remap:
       # General
-      Cmd-0: Alt-0
-      Cmd-1: Alt-1
-      Cmd-2: Alt-2
-      Cmd-3: Alt-3
-      Cmd-4: Alt-4
-      Cmd-5: Alt-5
-      Cmd-6: Alt-6
-      Cmd-7: Alt-7
-      Cmd-8: Alt-8
-      Cmd-9: Alt-9
-      Cmd-comma: Ctrl-Alt-s
-      Cmd-semicolon: Ctrl-Alt-Shift-s
+      Super-0: Alt-0
+      Super-1: Alt-1
+      Super-2: Alt-2
+      Super-3: Alt-3
+      Super-4: Alt-4
+      Super-5: Alt-5
+      Super-6: Alt-6
+      Super-7: Alt-7
+      Super-8: Alt-8
+      Super-9: Alt-9
+      Super-comma: Ctrl-Alt-s
+      Super-semicolon: Ctrl-Alt-Shift-s
       # File operations
-      Cmd-n: Ctrl-Alt-Insert        # Create new file
-      Cmd-Shift-n: Ctrl-Shift-n     # Search for file/class
-      Cmd-F4: Ctrl-F4               # Close current project/process
+      Super-n: Ctrl-Alt-Insert        # Create new file
+      Super-Shift-n: Ctrl-Shift-n     # Search for file/class
+      Super-F4: Ctrl-F4               # Close current project/process
       # Navigation - Back and Forward
-      Cmd-Alt-left: Ctrl-Alt-left   # Navigate back
-      Cmd-Alt-right: Ctrl-Alt-right # Navigate forward
+      Super-Alt-left: Ctrl-Alt-left   # Navigate back
+      Super-Alt-right: Ctrl-Alt-right # Navigate forward
       # Debugging
-      Cmd-Alt-r: F9
+      Super-Alt-r: F9
       # Search/Replace
-      Cmd-g: F3
-      Cmd-Shift-F3: Shift-F3
-      Cmd-Ctrl-g: Ctrl-Alt-Shift-j
+      Super-g: F3
+      Super-Shift-F3: Shift-F3
+      Super-Ctrl-g: Ctrl-Alt-Shift-j
       # Editing
-      Cmd-space: Ctrl-space
-      Cmd-Shift-space: Ctrl-Shift-space
-      Cmd-j: Ctrl-q
-      Cmd-o: Ctrl-o
-      Cmd-i: Ctrl-i
+      Super-space: Ctrl-space
+      Super-Shift-space: Ctrl-Shift-space
+      Super-j: Ctrl-q
+      Super-o: Ctrl-o
+      Super-i: Ctrl-i
       Alt-up: Ctrl-w
       Alt-down: Ctrl-Shift-w
-      Cmd-Alt-o: Ctrl-Alt-o
-      Cmd-Alt-i: Ctrl-Alt-i
-      Cmd-backspace: Ctrl-y
-      Cmd-w: Ctrl-F4
+      Super-Alt-o: Ctrl-Alt-o
+      Super-Alt-i: Ctrl-Alt-i
+      Super-backspace: Ctrl-y
+      Super-w: Ctrl-F4
       # Navigation
-      Cmd-Shift-o: Ctrl-Shift-n
-      Cmd-l: Ctrl-g
+      Super-Shift-o: Ctrl-Shift-n
+      Super-l: Ctrl-g
       Alt-space: Ctrl-Shift-i
-      Cmd-Y: Ctrl-Shift-i
+      Super-Y: Ctrl-Shift-i
       # VCS
-      Cmd-v: Alt-grave
+      Super-v: Alt-grave
 
   # File Managers - Nautilus only
   - name: Nautilus - macOS Finder-like shortcuts
@@ -78,26 +78,26 @@ keymap:
       only: [nautilus, org.gnome.nautilus]
     remap:
       # File properties and preferences
-      Cmd-i: Alt-enter
-      Cmd-comma: Ctrl-comma
-      Cmd-Shift-period: Ctrl-h
+      Super-i: Alt-enter
+      Super-comma: Ctrl-comma
+      Super-Shift-period: Ctrl-h
       # Navigation
-      Cmd-left_brace: Alt-left
-      Cmd-right_brace: Alt-right
-      Cmd-left: Alt-left
-      Cmd-right: Alt-right
-      Cmd-up: Alt-up
-      Cmd-down: enter
-      Cmd-Shift-left_brace: Ctrl-Page_up
-      Cmd-Shift-right_brace: Ctrl-Page_down
-      Cmd-Shift-left: Ctrl-Page_up
-      Cmd-Shift-right: Ctrl-Page_down
+      Super-left_brace: Alt-left
+      Super-right_brace: Alt-right
+      Super-left: Alt-left
+      Super-right: Alt-right
+      Super-up: Alt-up
+      Super-down: enter
+      Super-Shift-left_brace: Ctrl-Page_up
+      Super-Shift-right_brace: Ctrl-Page_down
+      Super-Shift-left: Ctrl-Page_up
+      Super-Shift-right: Ctrl-Page_down
       # View modes
-      Cmd-1: Ctrl-2
-      Cmd-2: Ctrl-1
+      Super-1: Ctrl-2
+      Super-2: Ctrl-1
       # File operations
-      Cmd-Ctrl-o: Shift-enter
-      Cmd-backspace: delete
+      Super-Ctrl-o: Shift-enter
+      Super-backspace: delete
 
   # Web Browsers - General
   - name: Web Browsers - macOS Safari-like shortcuts
@@ -112,22 +112,22 @@ keymap:
         - microsoft-edge
         - microsoft-edge-dev
     remap:
-      Cmd-q: Ctrl-q
-      Alt-Cmd-i: Ctrl-Shift-i
-      Alt-Cmd-j: Ctrl-Shift-j
-      Cmd-1: Alt-1
-      Cmd-2: Alt-2
-      Cmd-3: Alt-3
-      Cmd-4: Alt-4
-      Cmd-5: Alt-5
-      Cmd-6: Alt-6
-      Cmd-7: Alt-7
-      Cmd-8: Alt-8
-      Cmd-9: Alt-9
-      Cmd-Shift-left_brace: Ctrl-Page_up
-      Cmd-Shift-right_brace: Ctrl-Page_down
-      Cmd-Alt-left: Ctrl-Page_up
-      Cmd-Alt-right: Ctrl-Page_down
+      Super-q: Ctrl-q
+      Alt-Super-i: Ctrl-Shift-i
+      Alt-Super-j: Ctrl-Shift-j
+      Super-1: Alt-1
+      Super-2: Alt-2
+      Super-3: Alt-3
+      Super-4: Alt-4
+      Super-5: Alt-5
+      Super-6: Alt-6
+      Super-7: Alt-7
+      Super-8: Alt-8
+      Super-9: Alt-9
+      Super-Shift-left_brace: Ctrl-Page_up
+      Super-Shift-right_brace: Ctrl-Page_down
+      Super-Alt-left: Ctrl-Page_up
+      Super-Alt-right: Ctrl-Page_down
       Ctrl-Page_up: Ctrl-Page_up
       Ctrl-Page_down: Ctrl-Page_down
 
@@ -136,8 +136,8 @@ keymap:
     application:
       only: [Firefox]
     remap:
-      Cmd-comma: [Ctrl-t, a, b, o, u, t, Shift-semicolon, p, r, e, f, e, r, e, n, c, e, s, enter]
-      Cmd-Shift-n: Ctrl-Shift-p
+      Super-comma: [Ctrl-t, a, b, o, u, t, Shift-semicolon, p, r, e, f, e, r, e, n, c, e, s, enter]
+      Super-Shift-n: Ctrl-Shift-p
 
   # Chrome-based browsers specific
   - name: Chrome-based browsers
@@ -150,19 +150,19 @@ keymap:
         - microsoft-edge
         - microsoft-edge-dev
     remap:
-      Cmd-comma: [Alt-e, s, enter]
-      Cmd-q: Alt-F4
-      Cmd-left_brace: Alt-left
-      Cmd-right_brace: Alt-right
+      Super-comma: [Alt-e, s, enter]
+      Super-q: Alt-F4
+      Super-left_brace: Alt-left
+      Super-right_brace: Alt-right
 
   # VS Code / Codium
   - name: VS Code - macOS-like shortcuts
     application:
       only: [code, vscodium]
     remap:
-      Cmd-space: Ctrl-space
-      # Override global Cmd+period
-      Cmd-period: Cmd-period
+      Super-space: Ctrl-space
+      # Override global Super+period
+      Super-period: Super-period
       # Wordwise with Alt-F19 hack to prevent Alt menu activation
       Alt-left: [Alt-F19, Ctrl-left]
       Alt-right: [Alt-F19, Ctrl-right]
@@ -171,11 +171,11 @@ keymap:
       # Tab navigation
       Ctrl-Alt-left: Ctrl-Page_up
       Ctrl-Alt-right: Ctrl-Page_down
-      Cmd-Shift-left_brace: Ctrl-Page_up
-      Cmd-Shift-right_brace: Ctrl-Page_down
+      Super-Shift-left_brace: Ctrl-Page_up
+      Super-Shift-right_brace: Ctrl-Page_down
       # VS Code specific shortcuts
-      Cmd-g: F3
-      Cmd-Shift-g: Shift-F3
+      Super-g: F3
+      Super-Shift-g: Shift-F3
       Ctrl-Alt-f: Ctrl-h
       Ctrl-Alt-e: Ctrl-Shift-h
 
@@ -184,40 +184,40 @@ keymap:
     application:
       only: [Sublime_text, subl]
     remap:
-      Cmd-space: Ctrl-space
-      Ctrl-Cmd-up: Alt-o
-      Cmd-Ctrl-f: F11
+      Super-space: Ctrl-space
+      Ctrl-Super-up: Alt-o
+      Super-Ctrl-f: F11
       Ctrl-Alt-v: [Ctrl-k, Ctrl-v]
       Ctrl-Alt-up: Ctrl-up
       Ctrl-Alt-down: Ctrl-down
-      Cmd-Shift-up: Alt-Shift-up
-      Cmd-Shift-down: Alt-Shift-down
+      Super-Shift-up: Alt-Shift-up
+      Super-Shift-down: Alt-Shift-down
       Ctrl-Shift-left_brace: Ctrl-Page_down
       Ctrl-Shift-right_brace: Ctrl-Page_up
       Ctrl-Alt-right: Ctrl-Page_down
       Ctrl-Alt-left: Ctrl-Page_up
 
   # ULauncher
-  - name: ULauncher - Remap Cmd keys to Alt
+  - name: ULauncher - Remap Super keys to Alt
     application:
       only: [ulauncher]
     remap:
-      Cmd-1: Alt-1
-      Cmd-2: Alt-2
-      Cmd-3: Alt-3
-      Cmd-4: Alt-4
-      Cmd-5: Alt-5
-      Cmd-6: Alt-6
-      Cmd-7: Alt-7
-      Cmd-8: Alt-8
-      Cmd-9: Alt-9
-      Cmd-0: Alt-0
-      Cmd-b: Alt-b
-      Cmd-d: Alt-d
-      Cmd-e: Alt-e
-      Cmd-f: Alt-f
-      Cmd-g: Alt-g
-      Cmd-h: Alt-h
+      Super-1: Alt-1
+      Super-2: Alt-2
+      Super-3: Alt-3
+      Super-4: Alt-4
+      Super-5: Alt-5
+      Super-6: Alt-6
+      Super-7: Alt-7
+      Super-8: Alt-8
+      Super-9: Alt-9
+      Super-0: Alt-0
+      Super-b: Alt-b
+      Super-d: Alt-d
+      Super-e: Alt-e
+      Super-f: Alt-f
+      Super-g: Alt-g
+      Super-h: Alt-h
 
   # Terminal applications - Alacritty and GNOME Terminal only
   - name: Terminal overrides for wordwise navigation
@@ -226,11 +226,11 @@ keymap:
     remap:
       Alt-backspace: Alt-Shift-backspace
       Alt-delete: [escape, d]
-      Cmd-backspace: Ctrl-u
-      Cmd-delete: Ctrl-k
+      Super-backspace: Ctrl-u
+      Super-delete: Ctrl-k
       # Tab navigation for terminals
-      Cmd-Shift-left: Ctrl-Page_up
-      Cmd-Shift-right: Ctrl-Page_down
+      Super-Shift-left: Ctrl-Page_up
+      Super-Shift-right: Ctrl-Page_down
 
   # Global keymaps (excluding terminals and remotes)
   - name: Global macOS-like shortcuts
@@ -253,30 +253,30 @@ keymap:
         - Anydesk
     remap:
       # Global shortcuts
-      Cmd-period: escape
-      Cmd-Shift-left_brace: Ctrl-Page_up
-      Cmd-Shift-right_brace: Ctrl-Page_down
-      Cmd-space: Alt-F1
-      Cmd-F3: Ctrl-d
-      Cmd-Ctrl-f: Alt-F10
-      Cmd-q: Alt-F4
-      Cmd-h: Ctrl-h
-      Cmd-tab: Alt-tab
-      Cmd-Shift-tab: Alt-Shift-tab
-      Cmd-grave: Alt-grave
-      Cmd-Shift-grave: Alt-Shift-grave
+      Super-period: escape
+      Super-Shift-left_brace: Ctrl-Page_up
+      Super-Shift-right_brace: Ctrl-Page_down
+      Super-space: Alt-F1
+      Super-F3: Ctrl-d
+      Super-Ctrl-f: Alt-F10
+      Super-q: Alt-F4
+      Super-h: Ctrl-h
+      Super-tab: Alt-tab
+      Super-Shift-tab: Alt-Shift-tab
+      Super-grave: Alt-grave
+      Super-Shift-grave: Alt-Shift-grave
       Ctrl-tab: Ctrl-tab
       Ctrl-Shift-tab: Ctrl-Shift-tab
       
       # Text navigation and selection - macOS style
-      Cmd-left: home
-      Cmd-Shift-left: Shift-home
-      Cmd-right: end
-      Cmd-Shift-right: Shift-end
-      Cmd-up: Ctrl-home
-      Cmd-Shift-up: Ctrl-Shift-home
-      Cmd-down: Ctrl-end
-      Cmd-Shift-down: Ctrl-Shift-end
+      Super-left: home
+      Super-Shift-left: Shift-home
+      Super-right: end
+      Super-Shift-right: Shift-end
+      Super-up: Ctrl-home
+      Super-Shift-up: Ctrl-Shift-home
+      Super-down: Ctrl-end
+      Super-Shift-down: Ctrl-Shift-end
       
       # Emacs-style navigation
       Ctrl-a: home
@@ -292,7 +292,7 @@ keymap:
       Ctrl-backspace: Ctrl-backspace
       Ctrl-delete: Ctrl-delete
       Alt-backspace: Ctrl-backspace
-      Cmd-backspace: Ctrl-Shift-backspace
+      Super-backspace: Ctrl-Shift-backspace
       Alt-delete: Ctrl-delete
 
   # Wordwise navigation (not for VS Code, which has special handling)
@@ -310,30 +310,30 @@ keymap:
     application:
       only: [alacritty, gnome-terminal]
     remap:
-      Ctrl-Cmd-f: Alt-F10
+      Ctrl-Super-f: Alt-F10
       # Tab switching
       Ctrl-tab: Ctrl-Page_down
       Ctrl-Shift-tab: Ctrl-Page_up
       Ctrl-grave: Ctrl-Page_up
       # Tmux navigation
-      Cmd-t: [Ctrl-a, c]              # Create new tmux window (Ctrl-A + C)
-      Cmd-Alt-left: [Ctrl-a, p]       # Previous tmux window (Ctrl-A + P)
-      Cmd-Alt-right: [Ctrl-a, n]      # Next tmux window (Ctrl-A + N)
-      # Terminal shortcuts using Cmd + Ctrl-Shift
-      Cmd-minus: Ctrl-minus
-      Cmd-equal: Ctrl-Shift-equal
-      Cmd-w: Ctrl-Shift-w
-      Cmd-n: Ctrl-Shift-n
-      Cmd-Shift-left_brace: Ctrl-Page_up
-      Cmd-Shift-right_brace: Ctrl-Page_down
-      Cmd-c: Ctrl-Shift-c
-      Cmd-v: Ctrl-Shift-v
-      Cmd-f: Ctrl-Shift-f
-      Cmd-period: Ctrl-c
+      Super-t: [Ctrl-a, c]              # Create new tmux window (Ctrl-A + C)
+      Super-Alt-left: [Ctrl-a, p]       # Previous tmux window (Ctrl-A + P)
+      Super-Alt-right: [Ctrl-a, n]      # Next tmux window (Ctrl-A + N)
+      # Terminal shortcuts using Super + Ctrl-Shift
+      Super-minus: Ctrl-minus
+      Super-equal: Ctrl-Shift-equal
+      Super-w: Ctrl-Shift-w
+      Super-n: Ctrl-Shift-n
+      Super-Shift-left_brace: Ctrl-Page_up
+      Super-Shift-right_brace: Ctrl-Page_down
+      Super-c: Ctrl-Shift-c
+      Super-v: Ctrl-Shift-v
+      Super-f: Ctrl-Shift-f
+      Super-period: Ctrl-c
 
   # Alacritty specific
   - name: Alacritty specific
     application:
       only: [alacritty]
     remap:
-      Cmd-k: Ctrl-l 
+      Super-k: Ctrl-l 
